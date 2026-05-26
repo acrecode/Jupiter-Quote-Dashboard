@@ -1,6 +1,6 @@
 # Jupiter quote dashboard
 
-Small Vite app that watches Jupiter quotes and draws the route. Nothing fancy on the backend because there is no backend. It hits the free lite quote API from the browser.
+Small Vite app that watches Jupiter quotes and draws the route. Nothing much on the backend because there is no backend. It hits the free lite quote API from the browser.
 
 ## Run it
 
@@ -48,7 +48,7 @@ The quote endpoint is:
 https://lite-api.jup.ag/swap/v1/quote
 ```
 
-No key needed.
+No keys needed to run
 
 The token list situation is annoying. The old spec said to use:
 
@@ -60,7 +60,7 @@ That did not resolve from my environment, and current Jupiter docs point at the 
 
 Also the quote response is not exactly like the old sample. `platformFee` can be `null`, and route fees are not always included. The types allow that.
 
-## Files worth looking at
+## Files 
 
 ```text
 src/api/jupiter.ts       quote client
@@ -70,5 +70,3 @@ src/store/settings.ts    pause/slippage
 src/App.tsx              main wiring
 src/styles/globals.css   the whole look
 ```
-
-That is pretty much it.
